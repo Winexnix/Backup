@@ -1,0 +1,89 @@
+body{
+  background-image: url("https://melinet.cl/static/img/fd.png");
+  background-repeat: repeat;
+}
+.relleno{
+  height: 10vh;
+}
+
+.content {
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+ 
+ align-items:center;
+  padding: 20px;
+}
+
+.about-melinet {
+  margin: 40px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+.img-presentation {
+  width: 40%;
+  object-fit: cover;
+  border-radius: 30px; /* Puedes ajustar el valor según tu preferencia */
+}
+
+.text-success {
+  width: 40%;
+  padding: 2%;
+  border: 2px #00c5fc dotted;
+  background-color: white;
+}
+
+
+@media screen and (max-width: 767px) {
+     .about-melinet{
+       flex-direction:column;
+    }
+    .img-presentation{
+        width:100%;
+        margin-bottom:25px;
+    }
+    .text-success{
+        width:90%;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+     .about-melinet{
+       flex-direction:column;
+    }
+    .img-presentation{
+        width:100%;
+        margin-bottom:25px;
+    }
+    .text-success{
+        width:90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
