@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+
+<html lang="es-CL">
+
+
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <meta name="robots" content="max-image-preview:large" />
+
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+    <title>Melinet.cl | Planes Hogar</title>
+
+    <link rel="stylesheet" href="static/css/footer.css" />
+
+    <link rel="stylesheet" href="static/css/header.css" />
+
+    <link rel="stylesheet" href="static/css/planes-hogar.css">
+
+    <link rel="shortcut icon"
+
+        href="//img1.wsimg.com/isteam/ip/013b4373-e776-4c82-b321-dd18f9545312/favicon/24331179-1357-4c0b-9e84-db0434ae8088.png/:/rs=w:64,h:64,m"
+
+        type="image/x-icon" />
+
+    <script defer src="static/js/header-toggle.js"></script>
+
+    <script defer src="static/js/filtro.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+
+
+
+<body>
+
+   <div class="header">
+
+
+
+    <div class="locon">
+         <a href="index.html"><img class="logo" src="static/img/LOGO VECTOR.svg" alt="" /></a>
+        <div class="numte">
+            +569 3295 9748
+            +569 3235 9000
+        </div>
+    </div>
+
+
+
+    <div class="box-menu">
+
+
+
+      <a href="index.html" class="menu">INICIO</a>
+
+
+
+
+
+
+
+      <div class="menu" style="cursor: pointer;" onmouseover="togglePlanesHogar(true)"
+        onmouseout="togglePlanesHogar(false)">PLANES HOGAR
+
+
+
+        <ul id="planesHogarMenu" class="submenu">
+
+
+
+          <li><a class="subplan" href="planes-hogar.html?opc=mel">MELIPILLA</a></li>
+
+
+
+          <li><a class="subplan" href="planes-hogar.html?opc=ley">LEYDA</a></li>
+
+
+
+        </ul>
+
+
+
+      </div>
+
+
+
+
+
+
+
+      <a href="planes-empresa.html" class="menu">PLANES EMPRESA</a>
+
+
+
+
+
+
+
+      <a href="nosotros.html" class="menu">NOSOTROS</a>
+
+
+
+      <a href="contacto.html" class="menu">CONTACTO</a>
+
+      <a href="pago.html" class="menu">PAGAR SERVICIO</a>  
+
+    </div>
+
+
+
+
+
+
+
+    <div class="mobile-menu-icon" onclick="toggleMobileMenu()">☰</div>
+
+
+
+    <div class="mobile-menu" id="mobileMenu">
+
+
+
+      <a href="index.html" class="menu">INICIO</a>
+
+
+
+
+
+
+
+      <div id="planesHogarMobile" class="menu" style="padding-left: 0px;">PLANES HOGAR
+
+
+
+        <ul id="planesHogarSubMenu">
+
+
+
+          <li><a class="subplan" href="planes-hogar.html?opc=mel">MELIPILLA</a></li>
+
+
+
+          <li><a class="subplan" href="planes-hogar.html?opc=ley">LEYDA</a></li>
+
+
+
+        </ul>
+
+
+
+      </div>
+
+
+
+
+
+
+
+      <a href="planes-empresa.html" class="menu">PLANES EMPRESA</a>
+
+
+
+      <a href="nosotros.html" class="menu">NOSOTROS</a>
+
+
+
+      <a href="contacto.html" class="menu">CONTACTO</a>
+
+    <a href="pago.html" class="menu">PAGAR SERVICIO</a> 
+
+    </div>
+
+
+
+  </div>
+
+    <div class="content">
+
+        <div class="video-container">
+
+            <video autoplay muted loop>
+
+                <source src="https://netland.cl/wp-content/uploads/2021/08/internet-hogar-netland_2.mp4"
+
+                    type="video/mp4">
+
+                Tu navegador no soporta el elemento de video.
+
+            </video>
+
+
+
+            <div class="text-overlay">
+
+                <h1>Internet Hogar <span id="meli">Melipilla</span><span id="ley">Leyda</span></h1>
+
+                <p>Internet Inalambrico confiable para su hogar</p>
+
+            </div>
+
+        </div>
+
+        <div class="icons">
+
+            <div class="icon">
+
+                <img src="static/icons/comunidad-online.png" alt="">
+
+                <span>Comunidad Unida</span>
+
+            </div>
+
+            <div class="icon">
+
+                <img src="static/icons/world-humanitarian-day.png" alt="">
+
+                <span>Conexión global</span>
+
+            </div>
+
+            <div class="icon">
+
+                <img src="static/icons/consola-de-juego.png" alt="">
+
+                <span>Videojuegos Fluidos</span>
+
+            </div>
+
+            <div class="icon">
+
+                <img src="static/icons/movies-podcast.png" alt="">
+
+                <span>Peliculas</span>
+
+            </div>
+
+            <div class="icon">
+
+                <img src="static/icons/familia.png" alt="">
+
+                <span>Entretención Familiar</span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="seleccion">
+
+            <input id="checkbox_toggle" type="checkbox" class="check">
+
+            <div class="checkbox">
+
+                <label class="slide" for="checkbox_toggle">
+
+                    <label class="toggle" for="checkbox_toggle"></label>
+
+                    <label class="text" for="checkbox_toggle">INTERNET</label>
+
+                    <label class="text" for="checkbox_toggle">INTERNET + TV</label>
+
+                </label>
+
+            </div>
+
+        </div>
+
+        <!--PLANES DE INTERNET MELIPILLA-->
+
+        <!--PLAN INTERNET ILIMITADO-->
+
+        <div id="internet1" class="planes">
+
+            <h1>PLAN INTERNET ILIMITADO</h1>
+
+            <div class="plan">
+
+                <div class="plan-inner">
+
+                    <div class="entry-title">
+
+                        <h3>MAX NET S</h3>
+
+                        <div id="velocidad" style="
+                        font-weight: bold;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;">
+                            <h1 style="margin-top: 0px; margin-bottom: 0px; font-size: 2.5rem;">300</h1>
+                            <h1 style="margin-top: 0px; margin-bottom: 0px; font-size: 1.5rem;">MEGAS</h1>
+                        
+                        </div>
+
+                        
+                        <!--<div class="price">300MB
+
+          </div>-->
+
+                    </div>
+
+                    <div class="entry-content">
+
+                        <h1>$12.990</h1>
+
+                        <ul>
+
+                            <li><strong>VELOCIDAD SIMÉTRICA </strong></li>
+
+                            <li><strong>INCLUTE WIFI</strong></li>
+
+                            <li><strong>TECNOLOGÍA GPON</strong></li>
+
+                            <li><strong>SUPER WIFI 6G</strong></li>
+
+                            <li><strong>SOPORTE TÉCNICO</strong></li>
+
+
+
+                        </ul>
+
+                    </div>
+
+                    <div class="btn">
+
+                        <a href="https://api.whatsapp.com/send?phone=+56932959748&text=Quiero Contratar Servicios" target="_blank">Contratar</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="plan basic">
+
+                <div class="plan-inner">
+
+
+
+                    <div class="entry-title">
+
+                        <h3>MAX NET L</h3>
+
+                        <div id="velocidad" style="
+                        font-weight: bold;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;">
+                            <h1 style="margin-top: 0px; margin-bottom: 0px; font-size: 2.5rem;">500</h1>
+                            <h1 style="margin-top: 0px; margin-bottom: 0px; font-size: 1.5rem;">MEGAS</h1>
+                        
+                        </div>
+
+                        <!--<div class="price">500MB
+
+          </div>-->
+
+                    </div>
+
+                    <div class="entry-content">
+
+                        <h1>$17.990</h1>
+
+                        <ul>
+
+                            <li><strong>VELOCIDAD SIMÉTRICA </strong></li>
+
+                            <li><strong>INCLUTE WIFI</strong></li>
+
+                            <li><strong>TECNOLOGÍA GPON</strong></li>
+
+                            <li><strong>SUPER WIFI 6G</strong></li>
+
+                            <li><strong>SOPORTE TÉCNICO</strong></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="btn">
+
+                        <a href="https://api.whatsapp.com/send?phone=+56932959748&text=Quiero Contratar Servicios" target="_blank">Contratar</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="plan standard">
+
+                <div class="plan-inner">
+
+                    <div class="hot">Más vendido</div>
+
+                    <div class="entry-title">
+
+                        <h3>MAX NET FULL</h3>
+
+                        <div id="velocidad" style="
+                        font-weight: bold;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;">
+                            <h1 style="margin-top: 0px; margin-bottom: 0px; font-size: 2.5rem;">600</h1>
+                            <h1 style="margin-top: 0px; margin-bottom: 0px; font-size: 1.5rem;">MEGAS</h1>
+                        
+                        </div>
+
+                        <p>MEGAS</p>
+
+                        <!--<div class="price">600MB
+
+          </div>-->
+
+                    </div>
+
+                    <div class="entry-content">
+
+                        <h1>$26.990</h1>
+
+                        <ul>
+
+                            <li><strong>VELOCIDAD SIMÉTRICA </strong></li>
+
+                            <li><strong>INCLUTE WIFI</strong></li>
+
+                            <li><strong>TECNOLOGÍA GPON</strong></li>
+
+                            <li><strong>SUPER WIFI 6G</strong></li>
+
+                            <li><strong>SOPORTE TÉCNICO</strong></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="btn">
+
+                        <a href="https://api.whatsapp.com/send?phone=+56932959748&text=Quiero Contratar Servicios" target="_blank">Contratar</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="plan ultimite">
+
+                <div class="plan-inner">
+
+
+
+                    <div class="entry-title">
+
+                        <h3>MAX NET GAMER</h3>
+
+                        <div id="velocidad" style="
+                        font-weight: bold;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;">
+                            <h1 style="margin-top: 0px; margin-bottom: 0px; font-size: 2.5rem;">900</h1>
+                            <h1 style="margin-top: 0px; margin-bottom: 0px; font-size: 1.5rem;">MEGAS</h1>
+                        
+                        </div>
+
+                        <!--<div class="price">
+
+          </div>-->
+
+                    </div>
+
+                    <div class="entry-content">
+
+                        <h1>$31.990</h1>
+
+                        <ul>
+
+                            <li><strong>VELOCIDAD SIMÉTRICA </strong></li>
+
+                            <li><strong>INCLUTE WIFI</strong></li>
+
+                            <li><strong>TECNOLOGÍA GPON</strong></li>
+
+                            <li><strong>SUPER WIFI 6G</strong></li>
+
+                            <li><strong>SOPORTE TÉCNICO</strong></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="btn">
+
+                        <a href="https://api.whatsapp.com/send?phone=+56932959748&text=Quiero Contratar Servicios" target="_blank">Contratar</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+         
+
+        </div>
+
+        <!--PLAN INTERNET + TV-->
+
+        <div id="tv1" class="planes">
+
+
+
+            <h1>PLAN INTERNET + TV</h1>
+
+            <!--price tab-->
+
+            <div class="plan">
+
+                <div class="plan-inner">
+
+                    <div class="hot">Más vendido</div>
+
+                    <div class="entry-title">
+
+                        <h3>¡OFERTA!</h3>
+
+                        <h1>300MB+1TV</h1>
+
+                        <!--<div class="price">300MB
+
+          </div>-->
+
+                    </div>
+
+                    <div class="entry-content">
+
+                        <ul>
+
+                            <li><strong>Velocidad simétrica </strong></li>
+
+                            <li><strong>Incluye Wifi</strong></li>
+
+                            <li><strong>----</strong></li>
+
+                            <li><strong>Super Wifi 6G</strong></li>
+
+                            <li><strong>Soporte técnico</strong></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="btn">
+
+                        <a href="#">----</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- end of price tab-->
+
+            <!--price tab-->
+
+            <div class="plan basic">
+
+                <div class="plan-inner">
+
+
+
+                    <div class="entry-title">
+
+                        <h3>MAX NET S</h3>
+
+                        <h1>500MB+1TV </h1>
+
+                        <!--<div class="price">500MB
+
+          </div>-->
+
+                    </div>
+
+                    <div class="entry-content">
+
+                        <ul>
+
+                            <li><strong>Velocidad simétrica </strong></li>
+
+                            <li><strong>Incluye Wifi</strong></li>
+
+                            <li><strong>----</strong></li>
+
+                            <li><strong>Super Wifi 6G</strong></li>
+
+                            <li><strong>Soporte técnico</strong></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="btn">
+
+                        <a href="#">----</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- end of price tab-->
+
+            <!--price tab-->
+
+            <div class="plan standard">
+
+                <div class="plan-inner">
+
+                    <div class="entry-title">
+
+                        <h3>MAX NET L</h3>
+
+                        <h1>700MB+1TV</h1>
+
+                        <!--<div class="price">600MB
+
+          </div>-->
+
+                    </div>
+
+                    <div class="entry-content">
+
+                        <ul>
+
+                            <li><strong>Velocidad simétrica </strong></li>
+
+                            <li><strong>Incluye Wifi</strong></li>
+
+                            <li><strong>----</strong></li>
+
+                            <li><strong>Super Wifi 6G</strong></li>
+
+                            <li><strong>Soporte técnico</strong></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="btn">
+
+                        <a href="#">----</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- end of price tab-->
+
+            <!--price tab-->
+
+            <div class="plan ultimite">
+
+                <div class="plan-inner">
+
+
+
+                    <div class="entry-title">
+
+                        <h3>MAX NET FULL</h3>
+
+                        <h1>900MB+1TV</h1>
+
+                        <!--<div class="price">
+
+          </div>-->
+
+                    </div>
+
+                    <div class="entry-content">
+
+                        <ul>
+
+                            <li><strong>Velocidad simétrica </strong></li>
+
+                            <li><strong>Incluye Wifi</strong></li>
+
+                            <li><strong>----</strong></li>
+
+                            <li><strong>Super Wifi 6G</strong></li>
+
+                            <li><strong>Soporte técnico</strong></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="btn">
+
+                        <a href="#">----</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- end of price tab-->
+
+        </div>
+
+      
+
+        
+
+        <!--PLANES DE INTERNET LEYDA-->
+
+        <!--PLAN INTERNET ILIMITADO-->
+
+        <div id="internet2" class="planes">
+
+            <h1>PLAN INTERNET ILIMITADO</h1>
+
+            <div class="plan">
+
+                <div class="plan-inner">
+
+                    <div class="entry-title">
+
+                        <h3>MAX NET S</h3>
+
+                        <div id="velocidad" style="
+                        font-weight: bold;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;">
+                            <h1 style="margin-top: 0px; margin-bottom: 0px; font-size: 2.5rem;">300</h1>
+                            <h1 style="margin-top: 0px; margin-bottom: 0px; font-size: 1.5rem;">MEGAS</h1>
+                        
+                        </div>
+
+                        <!--<div class="price">300MB
+
+          </div>-->
+
+                    </div>
+
+                    <div class="entry-content">
+
+                        <h1>$17.990</h1>
+
+                        <ul>
+
+                            <li><strong>VELOCIDAD SIMÉTRICA </strong></li>
+
+                            <li><strong>INCLUTE WIFI</strong></li>
+
+                            <li><strong>TECNOLOGÍA GPON</strong></li>
+
+                            <li><strong>SUPER WIFI 6G</strong></li>
+
+                            <li><strong>SOPORTE TÉCNICO</strong></li>
+
+
+
+                        </ul>
+
+                    </div>
+
+                    <div class="btn">
+
+                        <a href="https://api.whatsapp.com/send?phone=+56932959748&text=Quiero Contratar Servicios" target="_blank">Contratar</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="plan basic">
+
+                <div class="plan-inner">
+
+
+
+                    <div class="entry-title">
+
+                        <h3>MAX NET L</h3>
+
+                        <div id="velocidad" style="
+                        font-weight: bold;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;">
+                            <h1 style="margin-top: 0px; margin-bottom: 0px; font-size: 2.5rem;">500</h1>
+                            <h1 style="margin-top: 0px; margin-bottom: 0px; font-size: 1.5rem;">MEGAS</h1>
+                        
+                        </div>
+
+                        <!--<div class="price">500MB
+
+          </div>-->
+
+                    </div>
+
+                    <div class="entry-content">
+
+                        <h1>$24.990</h1>
+
+                        <ul>
+
+                            <li><strong>VELOCIDAD SIMÉTRICA </strong></li>
+
+                            <li><strong>INCLUTE WIFI</strong></li>
+
+                            <li><strong>TECNOLOGÍA GPON</strong></li>
+
+                            <li><strong>SUPER WIFI 6G</strong></li>
+
+                            <li><strong>SOPORTE TÉCNICO</strong></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="btn">
+
+                        <a href="https://api.whatsapp.com/send?phone=+56932959748&text=Quiero Contratar Servicios" target="_blank">Contratar</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="plan standard">
+
+                <div class="plan-inner">
+
+                    <div class="hot">Más vendido</div>
+
+                    <div class="entry-title">
+
+                        <h3>MAX NET FULL</h3>
+
+                        <div id="velocidad" style="
+                        font-weight: bold;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;">
+                            <h1 style="margin-top: 0px; margin-bottom: 0px; font-size: 2.5rem;">700</h1>
+                            <h1 style="margin-top: 0px; margin-bottom: 0px; font-size: 1.5rem;">MEGAS</h1>
+                        
+                        </div>
+
+                        <p>MEGAS</p>
+
+                        <!--<div class="price">600MB
+
+          </div>-->
+
+                    </div>
+
+                    <div class="entry-content">
+
+                        <h1>$32.990</h1>
+
+                        <ul>
+
+                            <li><strong>VELOCIDAD SIMÉTRICA </strong></li>
+
+                            <li><strong>INCLUTE WIFI</strong></li>
+
+                            <li><strong>TECNOLOGÍA GPON</strong></li>
+
+                            <li><strong>SUPER WIFI 6G</strong></li>
+
+                            <li><strong>SOPORTE TÉCNICO</strong></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="btn">
+
+                        <a href="https://api.whatsapp.com/send?phone=+56932959748&text=Quiero Contratar Servicios" target="_blank">Contratar</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="plan ultimite">
+
+                <div class="plan-inner">
+
+
+
+                    <div class="entry-title">
+
+                        <h3>MAX NET GAMER</h3>
+
+                        <div id="velocidad" style="
+                        font-weight: bold;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;">
+                            <h1 style="margin-top: 0px; margin-bottom: 0px; font-size: 2.5rem;">900</h1>
+                            <h1 style="margin-top: 0px; margin-bottom: 0px; font-size: 1.5rem;">MEGAS</h1>
+                        
+                        </div>
+
+                        <!--<div class="price">
+
+          </div>-->
+
+                    </div>
+
+                    <div class="entry-content">
+
+                        <h1>$39.990</h1>
+
+                        <ul>
+
+                            <li><strong>VELOCIDAD SIMÉTRICA </strong></li>
+
+                            <li><strong>INCLUTE WIFI</strong></li>
+
+                            <li><strong>TECNOLOGÍA GPON</strong></li>
+
+                            <li><strong>SUPER WIFI 6G</strong></li>
+
+                            <li><strong>SOPORTE TÉCNICO</strong></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="btn">
+
+                        <a href="https://api.whatsapp.com/send?phone=+56932959748&text=Quiero Contratar Servicios" target="_blank">Contratar</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+        </div>
+
+        <!--PLAN INTERNET + TV-->
+
+        <div id="tv2" class="planes">
+
+
+
+            <h1>PLAN INTERNET + TV</h1>
+
+           
+
+            <div class="plan">
+
+                <div class="plan-inner">
+
+                    <div class="hot">Más vendido</div>
+
+                    <div class="entry-title">
+
+                        <h3>¡OFERTA!</h3>
+
+                        <h1>300MB+1TV</h1>
+
+                        <!--<div class="price">300MB
+
+          </div>-->
+
+                    </div>
+
+                    <div class="entry-content">
+
+                        <ul>
+
+                            <li><strong>Velocidad simétrica </strong></li>
+
+                            <li><strong>Incluye Wifi</strong></li>
+
+                            <li><strong>----</strong></li>
+
+                            <li><strong>Super Wifi 6G</strong></li>
+
+                            <li><strong>Soporte técnico</strong></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="btn">
+
+                        <a href="#">----</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+           
+
+            <div class="plan basic">
+
+                <div class="plan-inner">
+
+
+
+                    <div class="entry-title">
+
+                        <h3>MAX NET S</h3>
+
+                        <h1>500MB+1TV </h1>
+
+                        <!--<div class="price">500MB
+
+          </div>-->
+
+                    </div>
+
+                    <div class="entry-content">
+
+                        <ul>
+
+                            <li><strong>Velocidad simétrica </strong></li>
+
+                            <li><strong>Incluye Wifi</strong></li>
+
+                            <li><strong>----</strong></li>
+
+                            <li><strong>Super Wifi 6G</strong></li>
+
+                            <li><strong>Soporte técnico</strong></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="btn">
+
+                        <a href="#">----</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+           
+
+            <div class="plan standard">
+
+                <div class="plan-inner">
+
+                    <div class="entry-title">
+
+                        <h3>MAX NET L</h3>
+
+                        <h1>700MB+1TV</h1>
+
+                        <!--<div class="price">600MB
+
+          </div>-->
+
+                    </div>
+
+                    <div class="entry-content">
+
+                        <ul>
+
+                            <li><strong>Velocidad simétrica </strong></li>
+
+                            <li><strong>Incluye Wifi</strong></li>
+
+                            <li><strong>----</strong></li>
+
+                            <li><strong>Super Wifi 6G</strong></li>
+
+                            <li><strong>Soporte técnico</strong></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="btn">
+
+                        <a href="#">----</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+           
+
+            <div class="plan ultimite">
+
+                <div class="plan-inner">
+
+
+
+                    <div class="entry-title">
+
+                        <h3>MAX NET FULL</h3>
+
+                        <h1>900MB+1TV</h1>
+
+                        <!--<div class="price">
+
+          </div>-->
+
+                    </div>
+
+                    <div class="entry-content">
+
+                        <ul>
+
+                            <li><strong>Velocidad simétrica </strong></li>
+
+                            <li><strong>Incluye Wifi</strong></li>
+
+                            <li><strong>----</strong></li>
+
+                            <li><strong>Super Wifi 6G</strong></li>
+
+                            <li><strong>Soporte técnico</strong></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="btn">
+
+                        <a href="#">----</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+        </div>
+
+        
+
+
+
+    </div>
+
+  <footer class="footer-distributed">
+    <div class="footer-left">
+      <img class="logo" src="static/img/LOGO VECTOR.svg" alt="" />
+      <p class="footer-links">
+        <a href="#" class="link-1">Home</a>
+        <a href="index.html">Inicio</a>
+
+        <a href="planes-hogar.html">Planes Hogar</a>
+
+        <a href="planes-empresa.html">Planes Empresa</a>
+
+
+        <a href="nosotros.html">Nosotros</a>
+
+
+        <a href="contacto.html">Contacto</a>
+
+
+      </p>
+      <p class="footer-company-name">Melinet.cl © 2023</p>
+    </div>
+
+    <div class="footer-center">
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p>Melipilla Región Metropolitana</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>Area Comercial</p>
+        <p>+569 3295 9748</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>Soporte Técnico</p>
+        <p>+569 3235 9000</p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@company.com" style="color:white;">soporte@melinet.cl</a></p>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>Redes Sociales</span>
+      </p>
+      <div class="footer-icons">
+        <a href="https://www.facebook.com/meliwifi"><img class="rrss" src="static/img/facebook.png" alt=""></a>
+        <a href="https://www.instagram.com/melinetinternet/"><img class="rrss" src="static/img/instagram.png"
+            alt=""></a>
+
+      </div>
+        </div>
+  </footer>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <a href="https://api.whatsapp.com/send?phone=+56932959748&text=Quiero Contratar Servicios" class="float"
+
+        target="_blank">
+
+        <i class="fa fa-whatsapp my-float"></i>
+
+    </a>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,16 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^http://melinet.cl/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://melinet.cl$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.melinet.cl/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.melinet.cl$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://melinet.cl/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://melinet.cl$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.melinet.cl/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.melinet.cl$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://google.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://google.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.google.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.google.com$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+

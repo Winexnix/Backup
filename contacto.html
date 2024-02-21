@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+
+
+
+<html lang="es-CL">
+
+
+
+
+
+
+
+<head>
+
+
+
+  <meta charset="UTF-8" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+
+
+  <meta name="robots" content="max-image-preview:large" />
+
+
+
+  <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+
+
+  <title>Melinet.cl</title>
+
+
+
+  <link rel="stylesheet" href="static/css/footer.css" />
+
+
+
+  <link rel="stylesheet" href="static/css/header.css" />
+
+
+
+  <link rel="stylesheet" href="static/css/contact.css" />
+
+
+
+  <link rel="shortcut icon"
+    href="//img1.wsimg.com/isteam/ip/013b4373-e776-4c82-b321-dd18f9545312/favicon/24331179-1357-4c0b-9e84-db0434ae8088.png/:/rs=w:64,h:64,m"
+    type="image/x-icon" />
+
+
+  <script defer src="static/js/header-toggle.js"></script>
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+
+
+
+
+
+
+
+<body>
+
+
+
+  <div class="header">
+
+
+
+    <div class="locon">
+         <a href="index.html"><img class="logo" src="static/img/LOGO VECTOR.svg" alt="" /></a>
+        <div class="numte">
+            +569 3295 9748
+            +569 3235 9000
+        </div>
+    </div>
+
+
+
+    <div class="box-menu">
+
+
+
+      <a href="index.html" class="menu">INICIO</a>
+
+
+
+
+
+
+
+      <div class="menu" style="cursor: pointer;" onmouseover="togglePlanesHogar(true)"
+        onmouseout="togglePlanesHogar(false)">PLANES HOGAR
+
+
+
+        <ul id="planesHogarMenu" class="submenu">
+
+
+
+          <li><a class="subplan" href="planes-hogar.html?opc=mel">MELIPILLA</a></li>
+
+
+
+          <li><a class="subplan" href="planes-hogar.html?opc=ley">LEYDA</a></li>
+
+
+
+        </ul>
+
+
+
+      </div>
+
+
+
+
+
+
+
+      <a href="planes-empresa.html" class="menu">PLANES EMPRESA</a>
+
+
+
+
+
+
+
+      <a href="nosotros.html" class="menu">NOSOTROS</a>
+
+
+
+      <a href="contacto.html" class="menu">CONTACTO</a>
+
+      <a href="pago.html" class="menu">PAGAR SERVICIO</a>  
+
+    </div>
+
+
+
+
+
+
+
+    <div class="mobile-menu-icon" onclick="toggleMobileMenu()">☰</div>
+
+
+
+    <div class="mobile-menu" id="mobileMenu">
+
+
+
+      <a href="index.html" class="menu">INICIO</a>
+
+
+
+
+
+
+
+      <div id="planesHogarMobile" class="menu" style="padding-left: 0px;">PLANES HOGAR
+
+
+
+        <ul id="planesHogarSubMenu">
+
+
+
+          <li><a class="subplan" href="planes-hogar.html?opc=mel">MELIPILLA</a></li>
+
+
+
+          <li><a class="subplan" href="planes-hogar.html?opc=ley">LEYDA</a></li>
+
+
+
+        </ul>
+
+
+
+      </div>
+
+
+
+
+
+
+
+      <a href="planes-empresa.html" class="menu">PLANES EMPRESA</a>
+
+
+
+      <a href="nosotros.html" class="menu">NOSOTROS</a>
+
+
+
+      <a href="contacto.html" class="menu">CONTACTO</a>
+
+    <a href="pago.html" class="menu">PAGAR SERVICIO</a> 
+
+    </div>
+
+
+
+  </div>
+
+
+
+  <div class="content" style="padding-bottom:0px;">
+
+
+
+    <div class="video">
+
+
+
+      <div class="video-player">
+
+
+
+        <video autoplay muted loop>
+
+
+
+          <source
+            src="./static/img/Azul_Blanco_Cielo_Video_Fondo_de_Video_10_.mp4-vimeo-879532212-dash-google_mediacdn_sep-video-4522797b.mp4"
+            type="video/mp4" />
+
+
+
+          Tu navegador no soporta el elemento de video.
+
+
+
+        </video>
+
+
+
+      </div>
+
+
+
+    </div>
+
+
+
+    <div class="contact">
+
+
+
+
+
+
+
+      <h1>Contactate con nosotros
+
+
+
+      </h1>
+
+
+
+      <form id="fmcontacto" action="back/contac.php" method="POST" class="formcont">
+
+        <div class="contje">
+          <div class="cont1er">
+            <div class="campcont">
+
+
+
+              <label for="nombre">Nombre</label>
+
+
+
+              <input type="text" name="nombre" id="" placeholder="John Doe" required>
+
+
+
+            </div>
+            <div class="campcont">
+
+
+
+              <label for="correo">Correo</label>
+
+
+
+              <input type="email" name="correo" id="" placeholder="ejemplo@ejemplo.cl" required>
+
+
+
+            </div>
+            <div class="campcont">
+
+
+
+              <label for="telefono">Telefono</label>
+
+
+
+              <input type="number" name="telefono" id="" placeholder="912345678" required>
+
+
+
+            </div>
+            <div class="campcont">
+
+
+
+              <label for="direccion">Direccion</label>
+
+
+
+              <input type="text" name="direccion" id="" placeholder="Porvenir 123">
+
+
+
+            </div>
+          </div>
+
+          <div class="cont2ndo">
+            <div class="campcont">
+
+
+
+              <label for="comuna">Comuna</label>
+
+
+
+              <select name="comuna" id="">
+
+
+
+                <option value="">Seleccione una opcion:</option>
+
+
+
+                <option value="Melipilla">Melipilla</option>
+
+
+
+                <option value="Leyda">Leyda</option>
+
+
+
+              </select>
+
+
+
+            </div>
+            <div class="campcont">
+
+
+
+              <label for="servicio">Tipo de Servicio</label>
+
+
+
+              <select name="servicio" id="">
+
+
+
+                <option value="">Seleccione una opcion:</option>
+
+
+
+                <option value="Residencial">Residencial</option>
+
+
+
+                <option value="Empresa">Empresa</option>
+
+
+
+              </select>
+
+
+
+            </div>
+            <div class="campcont">
+
+
+
+              <label for="conocer">¿Como Conocio Melinet?</label>
+
+
+
+              <select name="conocer" id="">
+
+
+
+                <option value="">Seleccione una opcion:</option>
+
+
+
+                <option value="Referido">Referido</option>
+
+
+
+                <option value="Google">Google</option>
+
+
+
+                <option value="Redes Sociales">Redes Sociales</option>
+
+
+
+                <option value="Otro">Otro</option>
+
+
+
+              </select>
+
+
+
+            </div>
+            <div class="campcont">
+
+
+
+              <label for="mensaje">Mensaje</label>
+
+
+
+              <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+
+
+
+            </div>
+          </div>
+        </div>
+        <div class="g-recaptcha" data-sitekey="6LfJvF0pAAAAAN__Ikmkede3XwECGbpaDyXdOT0g" data-callback="enableSubmitButton"></div>
+    
+        <p class="captcha-message" id="captchaMessage">Completa el captcha para enviar</p>
+        <style>
+            .captcha-message {
+                color: red;
+                font-weight: bold;
+            }
+        </style>
+        <input type="submit" id="submitButton" value="Enviar" class="enviar" disabled>
+
+        <script>
+        // Función que se llama cuando se completa el ReCAPTCHA
+        function enableSubmitButton() {
+            document.getElementById("submitButton").removeAttribute("disabled");
+            document.getElementById("captchaMessage").style.display = "none";
+        }
+        </script>
+
+      </form>
+
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+  <footer class="footer-distributed">
+    <div class="footer-left">
+      <img class="logo" src="static/img/LOGO VECTOR.svg" alt="" />
+      <p class="footer-links">
+        <a href="#" class="link-1">Home</a>
+        <a href="index.html">Inicio</a>
+
+        <a href="planes-hogar.html">Planes Hogar</a>
+
+        <a href="planes-empresa.html">Planes Empresa</a>
+
+
+        <a href="nosotros.html">Nosotros</a>
+
+
+        <a href="contacto.html">Contacto</a>
+
+
+      </p>
+      <p class="footer-company-name">Melinet.cl © 2023</p>
+    </div>
+
+    <div class="footer-center">
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p>Melipilla Región Metropolitana</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>Area Comercial</p>
+        <p>+569 3295 9748</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>Soporte Técnico</p>
+        <p>+569 3235 9000</p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@company.com" style="color:white;">soporte@melinet.cl</a></p>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>Redes Sociales</span>
+      </p>
+      <div class="footer-icons">
+        <a href="https://www.facebook.com/meliwifi"><img class="rrss" src="static/img/facebook.png" alt=""></a>
+        <a href="https://www.instagram.com/melinetinternet/"><img class="rrss" src="static/img/instagram.png"
+            alt=""></a>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
